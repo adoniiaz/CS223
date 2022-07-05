@@ -1,0 +1,11 @@
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\bin\Debug\Model Class Exercise.exe.config
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\bin\Debug\Model Class Exercise.exe
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\bin\Debug\Model Class Exercise.pdb
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model Class Exercise.csproj.AssemblyReference.cache
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model Class Exercise.csproj.SuggestedBindingRedirects.cache
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model_Class_Exercise.Form1.resources
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model_Class_Exercise.Properties.Resources.resources
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model Class Exercise.csproj.GenerateResource.cache
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model Class Exercise.csproj.CoreCompileInputs.cache
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model Class Exercise.exe
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model Class Exercise.pdb
