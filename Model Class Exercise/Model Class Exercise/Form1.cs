@@ -20,13 +20,21 @@ namespace Model_Class_Exercise
         private void btn_add_Click(object sender, EventArgs e)
         {
             Propertiess p = new Propertiess();
-            p.itemId = int.Parse(txt_ItemId.Text);
-            p.datee = dtp_date.Text;
-            p.inventnum = int.Parse(txt_InventoryNumber.Text);
-            p.objectName = txt_ItemId.Text;
-            p.count = int.Parse(txt_count.Text);
-            p.price = int.Parse(txt_price.Text);
-            p.save();
+            try
+            {
+                p.itemId = int.Parse(txt_ItemId.Text);
+                p.datee = dtp_date.Text;
+                p.inventnum = int.Parse(txt_InventoryNumber.Text);
+                p.objectName = txt_ItemId.Text;
+                p.count = int.Parse(txt_count.Text);
+                p.price = int.Parse(txt_price.Text);
+                p.save();
+            }
+            catch (Exception e1)
+            {
+                MessageBox.Show(e1.Message);
+            }
+
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
