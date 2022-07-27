@@ -18,6 +18,8 @@ namespace Model_Class_Exercise
         public int count { get; set; }
         public int price { get; set; }
 
+        public bool isAvailable { get; set; }   
+
         public void save()
         {
             props.Add(this);

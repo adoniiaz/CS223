@@ -9,3 +9,4 @@ C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class 
 C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model Class Exercise.csproj.CoreCompileInputs.cache
 C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model Class Exercise.exe
 C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model Class Exercise.pdb
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\Model Class Exercise\Model Class Exercise\obj\Debug\Model_Class_Exercise.login.resources

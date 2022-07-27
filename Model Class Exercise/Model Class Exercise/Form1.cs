@@ -63,6 +63,17 @@ namespace Model_Class_Exercise
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+            login log = new login();
+            log.Show();
+        }
+
+        private void btn_checkbox_Click(object sender, EventArgs e)
+        {
+            string message = " ";
+            foreach (var item in checkbox.SelectedItems) {
+                message += checkbox.Text;
+            }
+            MessageBox.Show(message);
         }
     }
         
