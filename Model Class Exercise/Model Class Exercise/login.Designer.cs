@@ -35,6 +35,7 @@
             this.txt_password = new System.Windows.Forms.TextBox();
             this.lbl_user = new System.Windows.Forms.Label();
             this.lbl_pass = new System.Windows.Forms.Label();
+            this.btn_cancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +62,7 @@
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(277, 278);
+            this.btn_login.Location = new System.Drawing.Point(269, 285);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(75, 23);
             this.btn_login.TabIndex = 2;
@@ -106,12 +107,23 @@
             this.lbl_pass.TabIndex = 7;
             this.lbl_pass.Text = "Password";
             // 
+            // btn_cancel
+            // 
+            this.btn_cancel.Location = new System.Drawing.Point(428, 285);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(82, 23);
+            this.btn_cancel.TabIndex = 8;
+            this.btn_cancel.Text = "Cancel";
+            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.lbl_pass);
             this.Controls.Add(this.lbl_user);
             this.Controls.Add(this.txt_password);
@@ -137,5 +149,6 @@
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Label lbl_user;
         private System.Windows.Forms.Label lbl_pass;
+        private System.Windows.Forms.Button btn_cancel;
     }
 }

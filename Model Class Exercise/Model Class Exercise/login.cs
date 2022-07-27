@@ -30,6 +30,7 @@ namespace Model_Class_Exercise
             lbl_user.BackColor = Color.Transparent;
             lbl_pass.Parent= pictureBox1;
             lbl_pass.BackColor = Color.Transparent;
+            this.AcceptButton = btn_login;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,6 +48,11 @@ namespace Model_Class_Exercise
                 screen.Show();
             }
 
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

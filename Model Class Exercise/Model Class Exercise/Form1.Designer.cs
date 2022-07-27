@@ -230,9 +230,9 @@
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(235, 320);
+            this.btn_cancel.Location = new System.Drawing.Point(229, 333);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(132, 23);
+            this.btn_cancel.Size = new System.Drawing.Size(121, 23);
             this.btn_cancel.TabIndex = 14;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
@@ -359,7 +359,7 @@
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(30, 320);
+            this.btn_add.Location = new System.Drawing.Point(36, 330);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(98, 23);
             this.btn_add.TabIndex = 0;
