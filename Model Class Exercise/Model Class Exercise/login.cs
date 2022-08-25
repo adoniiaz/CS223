@@ -30,7 +30,10 @@ namespace Model_Class_Exercise
             lbl_user.BackColor = Color.Transparent;
             lbl_pass.Parent= pictureBox1;
             lbl_pass.BackColor = Color.Transparent;
+            checkbox_show.Parent = pictureBox1;
+            checkbox_show.BackColor = Color.Transparent;
             this.AcceptButton = btn_login;
+            this.txt_password.UseSystemPasswordChar = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -52,7 +55,24 @@ namespace Model_Class_Exercise
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
-            
+            Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkbox_show.Checked)
+            {
+                this.txt_password.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                this.txt_password.UseSystemPasswordChar = true;
+            }
         }
     }
 }

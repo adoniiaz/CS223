@@ -36,12 +36,14 @@
             this.lbl_user = new System.Windows.Forms.Label();
             this.lbl_pass = new System.Windows.Forms.Label();
             this.btn_cancel = new System.Windows.Forms.Button();
+            this.checkbox_show = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Model_Class_Exercise.Properties.Resources._360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -49,6 +51,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lbl_maintxt
             // 
@@ -62,7 +65,7 @@
             // 
             // btn_login
             // 
-            this.btn_login.Location = new System.Drawing.Point(269, 285);
+            this.btn_login.Location = new System.Drawing.Point(277, 322);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(75, 23);
             this.btn_login.TabIndex = 2;
@@ -109,7 +112,7 @@
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(428, 285);
+            this.btn_cancel.Location = new System.Drawing.Point(461, 322);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(82, 23);
             this.btn_cancel.TabIndex = 8;
@@ -117,12 +120,24 @@
             this.btn_cancel.UseVisualStyleBackColor = true;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
+            // checkbox_show
+            // 
+            this.checkbox_show.AutoSize = true;
+            this.checkbox_show.Location = new System.Drawing.Point(442, 271);
+            this.checkbox_show.Name = "checkbox_show";
+            this.checkbox_show.Size = new System.Drawing.Size(101, 17);
+            this.checkbox_show.TabIndex = 9;
+            this.checkbox_show.Text = "Show password";
+            this.checkbox_show.UseVisualStyleBackColor = true;
+            this.checkbox_show.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkbox_show);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.lbl_pass);
             this.Controls.Add(this.lbl_user);
@@ -131,6 +146,7 @@
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.lbl_maintxt);
             this.Controls.Add(this.pictureBox1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "login";
             this.Text = "login";
             this.Load += new System.EventHandler(this.login_Load);
@@ -150,5 +166,6 @@
         private System.Windows.Forms.Label lbl_user;
         private System.Windows.Forms.Label lbl_pass;
         private System.Windows.Forms.Button btn_cancel;
+        private System.Windows.Forms.CheckBox checkbox_show;
     }
 }

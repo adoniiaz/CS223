@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_edit = new System.Windows.Forms.Button();
+            this.btn_display = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rb_credit = new System.Windows.Forms.RadioButton();
             this.rb_paypal = new System.Windows.Forms.RadioButton();
@@ -42,7 +44,7 @@
             this.btn_checkbox = new System.Windows.Forms.Button();
             this.checkbox = new System.Windows.Forms.CheckedListBox();
             this.label_user = new System.Windows.Forms.Label();
-            this.btn_cancel = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
             this.dtp_date = new System.Windows.Forms.DateTimePicker();
             this.txt_InventoryNumber = new System.Windows.Forms.TextBox();
             this.txt_ItemId = new System.Windows.Forms.TextBox();
@@ -56,24 +58,27 @@
             this.txt_price = new System.Windows.Forms.TextBox();
             this.Item_number = new System.Windows.Forms.Label();
             this.btn_add = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.errorProvider_name = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btn_search = new System.Windows.Forms.Button();
+            this.txt_search = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_name)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_search);
+            this.groupBox1.Controls.Add(this.btn_search);
+            this.groupBox1.Controls.Add(this.btn_edit);
+            this.groupBox1.Controls.Add(this.btn_display);
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.btn_checkbox);
             this.groupBox1.Controls.Add(this.checkbox);
             this.groupBox1.Controls.Add(this.label_user);
-            this.groupBox1.Controls.Add(this.btn_cancel);
+            this.groupBox1.Controls.Add(this.btn_delete);
             this.groupBox1.Controls.Add(this.dtp_date);
             this.groupBox1.Controls.Add(this.txt_InventoryNumber);
             this.groupBox1.Controls.Add(this.txt_ItemId);
@@ -95,18 +100,39 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // btn_edit
+            // 
+            this.btn_edit.Location = new System.Drawing.Point(459, 375);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(88, 23);
+            this.btn_edit.TabIndex = 22;
+            this.btn_edit.Text = "Edit";
+            this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
+            // btn_display
+            // 
+            this.btn_display.Location = new System.Drawing.Point(329, 375);
+            this.btn_display.Name = "btn_display";
+            this.btn_display.Size = new System.Drawing.Size(88, 23);
+            this.btn_display.TabIndex = 21;
+            this.btn_display.Text = "Display";
+            this.btn_display.UseVisualStyleBackColor = true;
+            this.btn_display.Click += new System.EventHandler(this.btn_display_Click);
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.rb_credit);
             this.groupBox3.Controls.Add(this.rb_paypal);
             this.groupBox3.Controls.Add(this.rb_delivery);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(405, 262);
+            this.groupBox3.Location = new System.Drawing.Point(604, 280);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(236, 97);
             this.groupBox3.TabIndex = 20;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // rb_credit
             // 
@@ -156,7 +182,7 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.rb_variable);
             this.groupBox2.Controls.Add(this.rb_simple);
-            this.groupBox2.Location = new System.Drawing.Point(396, 178);
+            this.groupBox2.Location = new System.Drawing.Point(595, 171);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(245, 78);
             this.groupBox2.TabIndex = 19;
@@ -167,7 +193,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label7.Location = new System.Drawing.Point(18, 22);
+            this.label7.Location = new System.Drawing.Point(24, 16);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 18);
             this.label7.TabIndex = 2;
@@ -187,7 +213,7 @@
             // rb_simple
             // 
             this.rb_simple.AutoSize = true;
-            this.rb_simple.Location = new System.Drawing.Point(9, 44);
+            this.rb_simple.Location = new System.Drawing.Point(27, 44);
             this.rb_simple.Name = "rb_simple";
             this.rb_simple.Size = new System.Drawing.Size(56, 17);
             this.rb_simple.TabIndex = 0;
@@ -197,7 +223,7 @@
             // 
             // btn_checkbox
             // 
-            this.btn_checkbox.Location = new System.Drawing.Point(423, 140);
+            this.btn_checkbox.Location = new System.Drawing.Point(695, 131);
             this.btn_checkbox.Name = "btn_checkbox";
             this.btn_checkbox.Size = new System.Drawing.Size(133, 23);
             this.btn_checkbox.TabIndex = 18;
@@ -213,7 +239,7 @@
             "Not Available",
             "Coming Soon",
             "Out of Stock"});
-            this.checkbox.Location = new System.Drawing.Point(396, 16);
+            this.checkbox.Location = new System.Drawing.Point(619, 16);
             this.checkbox.Name = "checkbox";
             this.checkbox.Size = new System.Drawing.Size(200, 109);
             this.checkbox.TabIndex = 17;
@@ -228,15 +254,15 @@
             this.label_user.TabIndex = 16;
             this.label_user.Text = "label1";
             // 
-            // btn_cancel
+            // btn_delete
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(229, 333);
-            this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(121, 23);
-            this.btn_cancel.TabIndex = 14;
-            this.btn_cancel.Text = "Cancel";
-            this.btn_cancel.UseVisualStyleBackColor = true;
-            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            this.btn_delete.Location = new System.Drawing.Point(166, 375);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(110, 23);
+            this.btn_delete.TabIndex = 14;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // dtp_date
             // 
@@ -256,7 +282,7 @@
             // txt_ItemId
             // 
             this.txt_ItemId.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txt_ItemId.Location = new System.Drawing.Point(150, 53);
+            this.txt_ItemId.Location = new System.Drawing.Point(166, 52);
             this.txt_ItemId.Name = "txt_ItemId";
             this.txt_ItemId.Size = new System.Drawing.Size(100, 20);
             this.txt_ItemId.TabIndex = 10;
@@ -283,7 +309,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label6.Location = new System.Drawing.Point(70, 274);
+            this.label6.Location = new System.Drawing.Point(70, 280);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 27);
             this.label6.TabIndex = 7;
@@ -340,7 +366,7 @@
             // txt_price
             // 
             this.txt_price.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txt_price.Location = new System.Drawing.Point(150, 280);
+            this.txt_price.Location = new System.Drawing.Point(150, 287);
             this.txt_price.Name = "txt_price";
             this.txt_price.Size = new System.Drawing.Size(100, 20);
             this.txt_price.TabIndex = 2;
@@ -359,7 +385,7 @@
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(36, 330);
+            this.btn_add.Location = new System.Drawing.Point(17, 375);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(98, 23);
             this.btn_add.TabIndex = 0;
@@ -367,17 +393,27 @@
             this.btn_add.UseVisualStyleBackColor = true;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(647, 9);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(241, 240);
-            this.dataGridView1.TabIndex = 15;
-            // 
             // errorProvider_name
             // 
             this.errorProvider_name.ContainerControl = this;
+            // 
+            // btn_search
+            // 
+            this.btn_search.Location = new System.Drawing.Point(516, 20);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(86, 23);
+            this.btn_search.TabIndex = 23;
+            this.btn_search.Text = "Search";
+            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            // 
+            // txt_search
+            // 
+            this.txt_search.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txt_search.Location = new System.Drawing.Point(381, 23);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(109, 20);
+            this.txt_search.TabIndex = 24;
             // 
             // Form1
             // 
@@ -393,7 +429,6 @@
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider_name)).EndInit();
             this.ResumeLayout(false);
 
@@ -402,7 +437,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_cancel;
+        private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.DateTimePicker dtp_date;
         private System.Windows.Forms.TextBox txt_InventoryNumber;
         private System.Windows.Forms.TextBox txt_ItemId;
@@ -416,7 +451,6 @@
         private System.Windows.Forms.TextBox txt_price;
         private System.Windows.Forms.Label Item_number;
         private System.Windows.Forms.Button btn_add;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ErrorProvider errorProvider_name;
         private System.Windows.Forms.CheckedListBox checkbox;
         private System.Windows.Forms.Label label_user;
@@ -430,6 +464,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RadioButton rb_variable;
         private System.Windows.Forms.RadioButton rb_simple;
+        private System.Windows.Forms.Button btn_display;
+        private System.Windows.Forms.Button btn_edit;
+        private System.Windows.Forms.TextBox txt_search;
+        private System.Windows.Forms.Button btn_search;
     }
 }
 

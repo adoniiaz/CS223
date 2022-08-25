@@ -1,0 +1,15 @@
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\bin\Debug\ToDo LIst.exe.config
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\bin\Debug\ToDo LIst.exe
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\bin\Debug\ToDo LIst.pdb
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo LIst.csproj.AssemblyReference.cache
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo LIst.csproj.SuggestedBindingRedirects.cache
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo_LIst.Form1.resources
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo_LIst.Properties.Resources.resources
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo LIst.csproj.GenerateResource.cache
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo LIst.csproj.CoreCompileInputs.cache
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo LIst.exe
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo LIst.pdb
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo_LIst.Crud.resources
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo_LIst.MainPage.resources
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo_LIst.Display.resources
+C:\Users\adoni\OneDrive\Documents\GitHub\CS223\ToDo LIst\ToDo LIst\obj\Debug\ToDo_LIst.connect.resources
